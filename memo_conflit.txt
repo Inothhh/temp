@@ -10,12 +10,12 @@ Un conflit se produit lorsque deux branches ont modifié la même ligne d’un f
 🔹 ÉTAPES POUR RÉSOUDRE UN CONFLIT
 ---------------------------
 
-1. 🔁 Fusionner une branche
+1.  Fusionner une branche
 ---------------------------
 git checkout main
 git merge ma-branche
 
-2. 💥 Git détecte un conflit
+2.  Git détecte un conflit
 ---------------------------
 Message : CONFLICT (content): Merge conflict in fichier.py
 
@@ -28,12 +28,12 @@ contenu version actuelle
 contenu version fusionnée
 >>>>>>> ma-branche
 
-4. ✏️ Choisir la bonne version ou combiner
+4.  Choisir la bonne version ou combiner
 ---------------------------
 - Supprimer les lignes `<<<<<<<`, `=======`, `>>>>>>>`
 - Garder la version que tu veux
 
-5. ✅ Enregistrer le fichier puis :
+5.  Enregistrer le fichier puis :
 ---------------------------
 git add fichier.py
 git commit -m "Conflit résolu"
@@ -44,6 +44,3 @@ git status            # Voir les fichiers en conflit
 git mergetool         # Ouvre un outil de fusion visuel (si installé)
 git log --merge       # Voir les commits en conflit
 
-===========================
-     FIN DU MÉMO CONFLIT
-===========================

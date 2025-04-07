@@ -1,0 +1,65 @@
+
+=========================
+   MÉMO GIT ESSENTIEL
+=========================
+
+🔹 CONFIGURATION
+-------------------------
+git config --global user.name "TonNom"
+git config --global user.email "ton@email.com"
+
+🔹 INITIALISATION
+-------------------------
+git init
+
+🔹 AJOUT DE FICHIERS
+-------------------------
+git add fichier.py        # Ajoute un fichier spécifique
+git add .                 # Ajoute tous les fichiers
+git status                # Vérifie les changements
+
+🔹 COMMITS
+-------------------------
+git commit -m "Message clair"
+git log                   # Historique des commits
+
+🔹 LIAISON AVEC GITHUB
+-------------------------
+git remote add origin https://github.com/tonpseudo/tonrepo.git
+git branch -M main
+git push -u origin main
+
+🔹 SYNCHRONISATION
+-------------------------
+git pull origin main      # Récupérer les changements
+git push origin main      # Envoyer les changements
+
+🔹 BRANCHES
+-------------------------
+git branch nom-branche        # Créer une branche
+git checkout nom-branche      # Se déplacer dans une branche
+git merge nom-branche         # Fusionner une branche
+
+🔹 RÉSOUDRE UN CONFLIT
+-------------------------
+# Git te montre les lignes conflictuelles >>>>>>>>
+# Modifie-les puis :
+git add fichier
+git commit -m "Conflit résolu"
+
+🔹 FICHIERS LOURDS (GIT LFS)
+-------------------------
+git lfs install
+git lfs track "*.csv"
+git add .gitattributes
+
+🔹 NOTEBOOK JUPYTER AVEC NBDIME
+-------------------------
+pip install nbdime
+nbdime config-git --enable
+git diff
+nbdiff-web fichier.ipynb
+
+=========================
+     FIN DU MÉMO
+=========================

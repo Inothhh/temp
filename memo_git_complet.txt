@@ -1,0 +1,95 @@
+
+===========================
+   MÉMO GIT COMPLET (.TXT)
+===========================
+
+🔹 CONFIGURATION DE BASE
+---------------------------
+git config --global user.name "TonPseudoGitHub"
+git config --global user.email "tonemail@example.com"
+→ Configure ton identité Git liée à ton compte GitHub.
+
+🔹 INITIALISER UN DÉPÔT GIT
+---------------------------
+git init
+→ Initialise un nouveau dépôt Git dans ton dossier.
+
+🔹 AJOUTER ET COMMIT DES FICHIERS
+---------------------------
+git add .
+→ Ajoute tous les fichiers à l'index Git.
+
+git commit -m "Message de commit"
+→ Enregistre les changements localement avec un message.
+
+🔹 CRÉER UNE NOUVELLE VERSION
+---------------------------
+git tag v1.0
+→ Crée une version (tag) du projet.
+
+🔹 SYNCHRONISER AVEC GITHUB
+---------------------------
+git remote add origin https://github.com/TonPseudoGitHub/mon_repo.git
+→ Lier le dossier local à un dépôt GitHub.
+
+git branch -M main
+→ Renomme la branche actuelle en "main".
+
+git push -u origin main
+→ Envoie le code vers le dépôt GitHub (branche main).
+
+git pull origin main
+→ Récupère les modifications depuis GitHub.
+
+🔹 RÉSOUDRE UN CONFLIT
+---------------------------
+git merge autre_branche
+→ Fusionne une autre branche dans celle actuelle.
+
+Si conflit :
+→ Modifier les fichiers entre <<<<<<< et >>>>>>>
+→ Puis faire :
+    git add fichier_conflit
+    git commit -m "Conflit résolu"
+
+🔹 VERSIONNER DES FICHIERS LOURDS (GIT LFS)
+---------------------------
+git lfs install
+→ Installe Git Large File Storage.
+
+git lfs track "*.psd"
+→ Spécifie quels fichiers doivent utiliser LFS.
+
+git add .gitattributes
+→ Ajoute le fichier de config généré par LFS.
+
+🔹 VERSIONNER DES NOTEBOOKS JUPYTER
+---------------------------
+git add mon_notebook.ipynb
+→ Ajoute le notebook normalement.
+
+OU pour plus de propreté :
+pip install nbstripout
+nbstripout --install
+→ Nettoie les sorties des notebooks avant commit.
+
+🔹 INVITER UN COLLABORATEUR SUR GITHUB
+---------------------------
+1. Aller sur le dépôt GitHub → Settings → Collaborators
+2. Cliquer sur "Invite a collaborator"
+3. Entrer le pseudo GitHub de la personne
+4. Elle accepte l'invitation → elle peut cloner et pousser
+
+🔹 COMMANDES DE BASE POUR TRAVAILLER EN ÉQUIPE
+---------------------------
+git clone https://github.com/TonPseudoGitHub/mon_repo.git
+→ Cloner un dépôt distant
+
+git add .
+git commit -m "modification"
+git push
+→ Envoie les modifications au dépôt GitHub.
+
+===========================
+    FIN DU MÉMO
+===========================

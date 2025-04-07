@@ -1,0 +1,7 @@
+Faire un mémo Git,Créer un fichier .md ou .txt avec les commandes Git utiles,"git init, git add ., git commit -m, git push, git pull"
+Différencier Git et GitHub,Git = outil de versionnage local / GitHub = hébergement cloud de repos Git,Pas de commande – comprendre la différence conceptuelle
+Créer une nouvelle version de son code,Faire un commit ou créer un tag ou une branche pour chaque nouvelle version,"git commit -m 'Nouvelle version', git tag v1.0"
+Synchroniser son répertoire local avec GitHub,"Lier le dépôt local à GitHub, faire `git push` / `git pull`","git remote add origin URL, git push -u origin main, git pull origin main"
+Résoudre des conflits lors d'un merge,"En cas de conflit lors d'un merge, modifier les fichiers marqués, puis commit","git merge BRANCHE, puis résoudre conflits, git add, git commit"
+Versionner des fichiers lourds,Installer Git LFS et l'utiliser pour suivre les fichiers >100 Mo,"git lfs install, git lfs track '*.psd', git add .gitattributes"
+Versionner des Jupyter Notebook,Ajouter directement les .ipynb ou utiliser nbstripout pour nettoyer les outputs,"git add *.ipynb, git commit -m, ou `nbstripout --install` pour les nettoyer"

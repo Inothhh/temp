@@ -3,7 +3,7 @@
    MÉMO GIT : PULL / PUSH / FORK
 ===========================
 
-🔹 git push : ENVOYER DU CODE
+ git push : ENVOYER DU CODE
 ---------------------------
 Commande :
     git push origin main
@@ -16,7 +16,7 @@ Explication :
 Exemple :
     git push -u origin main
 
-🔹 git pull : RÉCUPÉRER DU CODE
+ git pull : RÉCUPÉRER DU CODE
 ---------------------------
 Commande :
     git pull origin main
@@ -27,7 +27,7 @@ Explication :
 Astuce :
     Toujours faire un pull AVANT de commencer une nouvelle modification si vous travaillez à plusieurs.
 
-🔹 git fetch : RÉCUPÉRER SANS FUSIONNER
+ git fetch : RÉCUPÉRER SANS FUSIONNER
 ---------------------------
 Commande :
     git fetch origin
@@ -35,7 +35,7 @@ Commande :
 Explication :
     Récupère les branches distantes, mais NE fusionne PAS automatiquement avec ta branche locale.
 
-🔹 fork : COPIER UN DÉPÔT EXISTANT SUR TON COMPTE GITHUB
+ fork : COPIER UN DÉPÔT EXISTANT SUR TON COMPTE GITHUB
 ---------------------------
 Étapes :
 1. Aller sur le dépôt GitHub à forker
@@ -47,7 +47,3 @@ Utilité :
 
 Ensuite :
     git clone https://github.com/TonCompte/TonRepoForké.git
-
-===========================
-     FIN DU MÉMO PULL / PUSH / FORK
-===========================

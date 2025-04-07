@@ -1,0 +1,49 @@
+
+===========================
+   MÉMO GIT : FICHIERS LOURDS & NOTEBOOKS
+===========================
+
+🔹 VERSIONNER DES FICHIERS LOURDS AVEC GIT LFS
+---------------------------
+
+1. Installer Git LFS (une seule fois) :
+    git lfs install
+
+2. Choisir les types de fichiers à suivre avec LFS :
+    git lfs track "*.csv"
+    git lfs track "*.zip"
+    git lfs track "*.psd"
+
+3. Ajouter les fichiers (et le .gitattributes généré) :
+    git add .gitattributes
+    git add mon_fichier_lourd.csv
+    git commit -m "Ajout fichier lourd avec Git LFS"
+    git push
+
+Note : GitHub indiquera que le fichier est suivi par Git LFS.
+
+🔹 VERSIONNER DES NOTEBOOKS JUPYTER (.ipynb)
+---------------------------
+
+1. Versionner directement (méthode simple mais brute) :
+    git add mon_notebook.ipynb
+    git commit -m "Ajout notebook"
+
+2. Supprimer les outputs automatiquement avec nbstripout :
+    pip install nbstripout
+    nbstripout --install
+
+→ Nettoie les sorties (résultats, graphes, etc.) avant commit.
+→ Tu ne commits que le code, pas les résultats.
+
+3. Afficher les différences lisibles avec nbdime :
+    pip install nbdime
+    nbdime config-git --enable
+
+Voir un diff lisible :
+    git diff
+    nbdiff-web mon_notebook.ipynb
+
+===========================
+     FIN DU MÉMO UPDATE
+===========================

@@ -1,0 +1,49 @@
+
+===========================
+   MÉMO GIT : RÉSOUDRE UN CONFLIT
+===========================
+
+🔹 QUAND A-T-ON UN CONFLIT ?
+---------------------------
+Un conflit se produit lorsque deux branches ont modifié la même ligne d’un fichier, ou qu’un fichier a été modifié d’un côté et supprimé de l’autre.
+
+🔹 ÉTAPES POUR RÉSOUDRE UN CONFLIT
+---------------------------
+
+1. 🔁 Fusionner une branche
+---------------------------
+git checkout main
+git merge ma-branche
+
+2. 💥 Git détecte un conflit
+---------------------------
+Message : CONFLICT (content): Merge conflict in fichier.py
+
+3. 🧾 Ouvrir le fichier concerné
+---------------------------
+Git y aura mis ceci :
+<<<<<<< HEAD
+contenu version actuelle
+=======
+contenu version fusionnée
+>>>>>>> ma-branche
+
+4. ✏️ Choisir la bonne version ou combiner
+---------------------------
+- Supprimer les lignes `<<<<<<<`, `=======`, `>>>>>>>`
+- Garder la version que tu veux
+
+5. ✅ Enregistrer le fichier puis :
+---------------------------
+git add fichier.py
+git commit -m "Conflit résolu"
+
+🔹 OUTILS UTILES
+---------------------------
+git status            # Voir les fichiers en conflit
+git mergetool         # Ouvre un outil de fusion visuel (si installé)
+git log --merge       # Voir les commits en conflit
+
+===========================
+     FIN DU MÉMO CONFLIT
+===========================
